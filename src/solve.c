@@ -6,7 +6,7 @@ double discriminant(int a, int b, int c) {
 
 int solve(int a, int b, int c) {
     double d = discriminant(a, b, c);
-    double x1, x2;
+    double x1 = 0, x2 = 0;
     if (a == 0) {
 	printf("Not a square equation!");
 	return -1;
@@ -17,7 +17,7 @@ int solve(int a, int b, int c) {
 	printf("x1 = %f, x2 = %f", x1, x2);
 	return 2;
     }
-    if (d == 0.0) {
+    if (d == 0) {
 	x1 = -b/2*a;
 	printf("x = %f", x1);
 	return 1;
